@@ -59,8 +59,7 @@ var deleteTweets = function () {
     });
 
     // Scroll down to load more tweets
-    window.scrollBy(0, 30
-    );
+    window.scrollBy(0, 30);
 };
 
 // Run the script at intervals
