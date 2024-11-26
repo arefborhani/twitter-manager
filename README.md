@@ -1,65 +1,50 @@
-# **Twitter Automation Scripts**
+Twitter Automation Scripts
+این مخزن شامل سه اسکریپت است که برای انجام عملیات خودکار در حساب توییتر شما طراحی شده‌اند:
 
-This repository contains scripts to automate the following tasks on Twitter:
+Unfollow Users: آنفالو کردن همه کاربران.
+Delete Tweets: حذف توییت‌ها و ری‌توییت‌ها.
+Delete Likes: حذف لایک‌ها از توییت‌ها.
+راهنمای استفاده
+1. ورود به حساب توییتر
+ابتدا وارد حساب توییتر خود شوید.
 
-- **Unfollow users who don't follow you back**
-- **Delete your tweets and retweets**
+برای آنفالو کردن کاربران: به بخش Following بروید (لیست کسانی که فالو کرده‌اید).
+برای حذف توییت‌ها یا ری‌توییت‌ها: به پروفایل خود و بخش Tweets بروید.
+برای حذف لایک‌ها: به بخش Likes در پروفایل خود بروید.
+2. باز کردن Developer Tools
+مرورگر خود را باز کنید (گوگل کروم پیشنهاد می‌شود) و ابزار توسعه‌دهنده را باز کنید:
 
----
+ویندوز: دکمه‌های Ctrl + Shift + J را فشار دهید.
+مک: دکمه‌های Cmd + Option + J را فشار دهید.
+3. اجرای اسکریپت‌ها
+وارد تب Console در Developer Tools شوید.
+اسکریپت مورد نظر خود (یکی از فایل‌های deletedLikes.js، deletedTweets.js، یا unfollowedUsers.js) را کپی کنید.
+در کنسول Paste کنید.
+دکمه Enter را فشار دهید تا اسکریپت اجرا شود.
+4. در صورت بروز خطا
+اگر با خطای Paste is not allowed مواجه شدید:
+دستور allow paste را در کنسول تایپ کنید و Enter بزنید.
+مجدداً اسکریپت را جای‌گذاری کنید و اجرا کنید.
+نکات مهم
+توقف اسکریپت:
+برای متوقف کردن اجرای اسکریپت، کافیست صفحه را رفرش کنید (F5).
 
-## **Usage Guide**
+افزایش Timeout برای عملیات بزرگ:
+اگر قصد دارید تعداد زیادی آنفالو، حذف یا لایک انجام دهید، مقدار Timeout را در اسکریپت افزایش دهید (به‌عنوان مثال به 10 یا 15 ثانیه).
 
-Follow these steps to run the scripts effectively:
+تست روی تعداد کم:
+همیشه قبل از اجرای گسترده، اسکریپت را روی تعداد کمی اجرا کنید تا مطمئن شوید که درست کار می‌کند.
 
-### **1. Log In to Your Twitter Account**
-- **For Unfollowing:**
-  - Go to the **Following** section in your Twitter account to see the list of people you follow. 
-- **For Deleting Tweets/Retweets:**
-  - Navigate to your **Tweets** or **Retweets** section.
+مسئولیت استفاده:
+استفاده از این اسکریپت‌ها مسئولیت شخصی دارد. حتماً قوانین و سیاست‌های توییتر را رعایت کنید.
 
----
+اسکریپت‌ها
+1. Unfollow Users (unfollowedUsers.js)
+این اسکریپت تمام کاربران را آنفالو می‌کند.
+⚠️ هشدار: این اسکریپت بررسی نمی‌کند که آیا کاربری شما را فالو کرده است یا خیر. اگر قصد دارید این قابلیت اضافه شود، باید اسکریپت را تغییر دهید.
 
-### **2. Open Developer Tools in Your Browser**
+2. Delete Tweets (deletedTweets.js)
+این اسکریپت تمامی توییت‌ها و ری‌توییت‌های شما را حذف می‌کند.
 
-- Open your browser (**Google Chrome** is recommended).
-- Access **Developer Tools**:
-  - **Windows:** Press `Ctrl + Shift + J`.
-  - **Mac:** Press `Cmd + Option + J`.
-
----
-
-### **3. Run the Script**
-
-1. Click on the **Console** tab in Developer Tools.
-2. **Copy** the script you want to use (Unfollow or Delete Tweets).
-3. **Paste** it into the Console.
-4. Press `Enter` to execute the script.
-
----
-
-### **4. Handling Errors**
-
-- If you see a permission error, type **`allow paste`** in the console and press `Enter`.
-- Paste the script again and run it.
-
----
-
-## **Additional Notes**
-
-### **Test Before Bulk Actions**
-Run the script on a small batch first to ensure it's working as expected.
-
-### **Stopping the Script**
-To stop the script, simply refresh the page (`F5`).
-
-### **Avoid Twitter Rate Limits**
-If you are running the script for a large number of actions, increase the **Timeout** value (e.g., to `10` or `15` seconds) to avoid hitting rate limits.
-
-### **Disclaimer**
-These scripts are provided for automation purposes. The usage of these scripts is your responsibility, and you should ensure compliance with Twitter’s policies.
-
----
-
-## **Support**
-If you encounter any issues or need assistance, feel free to reach out! 🚀
-
+3. Delete Likes (deletedLikes.js)
+این اسکریپت تمام لایک‌های شما روی توییت‌ها را حذف می‌کند.
