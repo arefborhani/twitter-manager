@@ -1,29 +1,29 @@
-مراحل اجرا
-1. ورود به حساب کاربری
-وارد حساب توییتر خود شوید.
-برای انجام عملیات:
-اگر می‌خواهید افراد را آنفالو کنید، به بخش Following بروید (لیست افرادی که فالو کرده‌اید).
-اگر می‌خواهید توییت‌ها یا ری‌توییت‌ها را حذف کنید، به بخش پست‌ها یا ری‌پست‌ها بروید.
-2. باز کردن Developer Tools
-مرورگر خود را باز کنید (ترجیحاً گوگل کروم).
-وارد Developer Tools شوید:
-ویندوز: دکمه‌های Ctrl + Shift + J را فشار دهید.
-مک: دکمه‌های Cmd + Option + J را فشار دهید.
-3. اجرای کد
-در تب Console (کنسول) در Developer Tools، کلیک کنید.
-کد موردنظر را کپی کنید و در بخش کنسول Paste کنید.
-کلید Enter را فشار دهید تا اسکریپت اجرا شود.
-در صورت بروز خطا
-اگر با ارور مواجه شدید، عبارت allow paste را در کنسول تایپ کنید و Enter بزنید. سپس دوباره کد را Paste کرده و اجرا کنید.
-نکات مهم
-عملکرد صحیح اسکریپت:
+1. Log In to Your Twitter Account
+For Unfollowing:
+Navigate to the Following section in your Twitter account. This is the list of accounts you follow.
+For Deleting Tweets or Retweets:
+Go to the Tweets or Retweets section where your posts or shared tweets are displayed.
+2. Open Developer Tools in Your Browser
+Open your browser (preferably Google Chrome).
+Access the Developer Tools by following these steps:
+Windows: Press Ctrl + Shift + J.
+Mac: Press Cmd + Option + J.
+3. Run the Script
+Click on the Console tab in the Developer Tools.
+Copy the script you want to use (Unfollow or Delete Tweets) and Paste it into the console.
+Press Enter to execute the script.
+4. Handling Errors
+If you see an error related to permissions, type allow paste in the console and press Enter.
+Then, paste the script again and run it.
+Additional Notes
+Test Before Bulk Actions:
+Run the script for a small number of actions first to ensure it works as expected.
 
-کد ابتدا روی تعداد کمی از کاربران یا پست‌ها تست شود تا مطمئن شوید که به‌درستی کار می‌کند.
-توقف کد:
-اگر خواستید اسکریپت را متوقف کنید، کافی است صفحه را ریفرش (Refresh) کنید (کلید F5 را فشار دهید).
+Stopping the Script:
+Refresh the page (F5) to stop the script at any time.
 
-توجه به قوانین توییتر:
-در صورتی که تعداد زیادی آنفالو یا حذف پست در مدت کوتاه انجام دهید، ممکن است حساب شما محدود شود. برای جلوگیری از این مشکل، Timeout در کد به مقدار مناسب (مثلاً 10 یا 15 ثانیه) افزایش دهید.
+Avoid Twitter Rate Limits:
+To prevent account restrictions, increase the script's Timeout value (e.g., to 10 or 15 seconds) if you’re performing a large number of actions.
 
-استفاده با مسئولیت شخصی:
-این اسکریپت برای صرفه‌جویی در زمان طراحی شده و استفاده از آن به عهده شماست.
+Disclaimer:
+These scripts are provided for automation purposes, and their usage is your responsibility. Ensure compliance with Twitter’s policies.
